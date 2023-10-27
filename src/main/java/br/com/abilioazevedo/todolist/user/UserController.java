@@ -16,15 +16,6 @@ public class UserController {
 
   @Autowired
   private IUserRepository userRepository;
-  /**
-   * String (texto)
-   * Integer (int)
-   * Double (double)
-   * Float (float)
-   * char (A B C)
-   * Date (data)
-   * void
-   */
   @PostMapping()
   public ResponseEntity create(@RequestBody UserModel userModel) {
     var user = this.userRepository.findByUsername(userModel.getUsername());
