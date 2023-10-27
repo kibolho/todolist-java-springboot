@@ -1,10 +1,17 @@
 # todolist java springboot
 
+### Install packages Maven
+
+```bash
+mvn clean install
+```
+
 ### Run project
 
 ```bash
 mvn spring-boot:run
 ```
+
 
 ### Database
 
